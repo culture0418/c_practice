@@ -1,0 +1,65 @@
+// example1
+2
+Jonathan Jesse 
+Jonathan
+Jesse
+Jesse
+Jesse
+Jesse
+Jesse
+Jesse
+Jonathan
+Jonathan
+Jonathan
+Jonathan
+Jesse
+Jesse
+Jesse
+Jonathan
+Jesse
+Jesse
+Jonathan
+Jesse
+Jonathan
+Jesse
+Jonathan
+Jonathan
+Jonathan
+Jesse
+Jesse
+
+// result1
+Jonathan 11
+Jesse 15
+Jesse
+
+// example2
+3
+Alexander Bryan Victoria 
+Alexander
+Bryan
+Victoria
+Alexander
+Alexander
+Bryan
+Bryan
+Bryan
+Alexander
+Victoria
+Victoria
+Bryan
+Victoria
+Alexander
+Victoria
+Bryan
+Alexander
+Victoria
+Victoria
+Victoria
+
+// result2
+Alexander 6
+Bryan 6
+Victoria 8
+Victoria
+

@@ -1,0 +1,16 @@
+// example 1
+// Hello jahshd@ World.
+// Hello World.
+
+// example 2
+// Umm, C is the asdfasdfae@ best !!!@@@ujdjdasfasdfasdfas programming language?
+// Umm, C is the best programming language?
+
+// rules
+// 詞彙由 a-z A-Z 所組成
+// 正常文章中會出現 . , ! ? 四種標點符號，位於詞彙的最後方，且不該單獨出現
+// 每個詞彙的長度介於 1 ~ 21 個字元之間 (長度含標點符號)
+// 每個詞彙由一個空白隔開
+
+
+// v,scode is the best?/ 

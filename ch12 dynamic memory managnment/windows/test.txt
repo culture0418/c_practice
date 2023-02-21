@@ -1,0 +1,126 @@
+[通訊協定]://[主機名稱]:[通訊埠]/[所在路徑]?[查詢字串]#[識別符號]
+https://www.abc.com:80/user/12345/photo?from=20180101&to=20201231#favorite
+
+Location {
+  protocol: https,
+  host: www.abc.com,
+  port: 80,
+  pathname: /user/12345/photo,
+  search: ?from=20180101&to=20201231,
+  hash: #favorite,
+}
+
+-----------------------------------------------------------------
+[通訊協定]://[主機名稱]:[通訊埠]/[所在路徑]?[查詢字串]#[識別符號]
+http://1.2.3.4:443/it/is/a/very/long/path/name
+
+Location {
+  protocol: http,
+  host: 1.2.3.4,
+  port: 443,
+  pathname: /it/is/a/very/long/path/name,
+  search: ?,
+  hash: #,
+}
+
+----------------------------------------------------------
+// no port, pathname, search, hash --ok--
+ip://193.55.28.30 
+
+Location {
+  protocol: ip,
+  host: 193.55.28.30,
+  port: (default),
+  pathname: /,
+  search: ?,
+  hash: #,
+}
+
+-------------------------------------------------------------------------
+// no port --ok--
+https://www.abc.com/user/12345/photo?from=20180101&to=20201231#favorite
+
+Location {
+  protocol: https,
+  host: www.abc.com,
+  port: (default),
+  pathname: /user/12345/photo,
+  search: ?from=20180101&to=20201231,
+  hash: #favorite,
+}
+
+-----------------------------------------------------------------------------
+// no pathname -- ok--
+https://www.abc.com:80?from=20180101&to=20201231#favorite
+
+Location {
+  protocol: https,
+  host: www.abc.com,
+  port: 80,
+  pathname: /,
+  search: ?from=20180101&to=20201231,
+  hash: #favorite,
+}
+
+-----------------------------------------------------------------------------
+// no search --ok--
+https://www.abc.com:80/user/12345/photo#favorite
+
+Location {
+  protocol: https,
+  host: www.abc.com,
+  port: 80,
+  pathname: /user/12345/photo,
+  search: ?,
+  hash: #favorite,
+}
+
+----------------------------------------------------------------------------------
+// no hash --ok--
+https://www.abc.com:80/user/12345/photo?from=20180101&to=20201231
+
+Location {
+  protocol: https,
+  host: www.abc.com,
+  port: 80,
+  pathname: /user/12345/photo,
+  search: ?from=20180101&to=20201231,
+  hash: #,
+}
+
+----------------------------------------------------------------------------------
+// no port, search, hash
+ip://193.55.28.30/it/is/a/very/long/path/name
+
+Location {
+  protocol: ip,
+  host: 193.55.28.30,
+  port: (default),
+  pathname: /it/is/a/very/long/path/name,
+  search: ?,
+  hash: #,
+}
+
+// no port, pathname, search
+https://ckj.imslab.org#/discussion/mzYmKpsSMgkoyDSujDMOxCRQtieMVH
+
+Location {
+  protocol: https,
+  host: ckj.imslab.org,
+  port: (default),
+  pathname: /,
+  search: ?,
+  hash: #/discussion/mzYmKpsSMgkoyDSujDMOxCRQtieMVH,
+}
+
+// no port, pathname, hash
+foo://bar.buz?asd=qwe
+
+Location {
+  protocol: foo,
+  host: bar.buz,
+  port: (default),
+  pathname: /,
+  search: ?asd=qwe,
+  hash: #,
+}

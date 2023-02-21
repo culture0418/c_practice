@@ -1,0 +1,55 @@
+move1 = "PATA PATA PATA PON";
+attack1 = "PON PON PATA PON";
+defend = "CHAKA CHAKA PATA PON";
+
+// example1 ok
+// 5 4
+// 1 PATA PATA PATA PON, (move1)
+// 2 PON PON PATA PON. (attack1)
+// 3 PON PON PATA PON, (attack1)
+// 4 PATA PATA PATA PON. (move1)
+// 5 PATA PATA PATA PON, (move1)
+// 6 CHAKA CHAKA PATA PON. (defend) 
+// 7 PON PON PATA PON, (attack1)
+// 8 PON PON PATA PON. (attack1)
+// 9 PON PON PATA PON, (attack1)
+// 10 CHAKA CHAKA PATA PON. (defend)
+// 11 PON PON PATA PON, (attack1)
+// 12 PATA PATA PATA PON, (move1)
+// 13 CHAKA PATA PATA PON, (none)
+// 14 PON PATA PATA PON, (none)
+// 15 PON PON PATA PON (attack1)
+
+move1 = "PATA PATA PATA PON";
+attack1 = "PON PON PATA PON";
+defend = "CHAKA CHAKA PATA PON";
+
+// 5 4 ok
+// 1  PATA PATA PATA PON, (move1)
+// 2  PON PON PATA PON (attack1)
+// 3  PON PON PATA PON (attack1)
+// 4  PATA PATA PATA PON (move1)
+// 5  PATA PATA PATA PON (move1)
+// 6  CHAKA CHAKA PATA PON (defend)
+// 7  PATA PATA PATA PON (move1)
+// 8  PON PON PATA PON (attack1)
+// 9  PON PON PATA PON (attack1)
+// 10 PON PON PATA PON (attack1)
+// 11 PON PON PATA PON (attack1)
+// 12 PATA PATA PATA PON (move1)
+// 13 PON PON PATA PON (attack1)
+
+move1 = "PATA PATA PATA PON";
+attack1 = "PON PON PATA PON";
+defend = "CHAKA CHAKA PATA PON";
+// example 4
+// 5 4
+// 1  PATA PATA PATA PON (move1)
+// 2  PATA PATA PATA PON ((attack1)
+// 3  PATA PATA PATA PON (move1)
+// 4  PATA PATA PATA PON (move1)
+// 5  PATA PATA PATA PON (move1)
+// 6  PATA PATA PATA PON (move1)
+// 7  PATA PATA PATA PON (move1)
+// 8  PATA PATA PATA PON (move1)
+
